@@ -110,7 +110,7 @@
     <div class="border-t border-slate-800 mt-10 pt-6">
       <div class="flex flex-col md:flex-row items-center justify-between gap-3">
         <p class="text-sm text-slate-500">© 2025 BEM Universitas Harapan Bangsa — All Rights Reserved</p>
-        <p class="text-sm text-slate-500">Designed by <span class="text-amber-500">Team ngantuk</span></p>
+        <p class="text-sm text-slate-500">Designed by <span class="text-amber-500">Team UHB</p>
       </div>
     </div>
   </div>
