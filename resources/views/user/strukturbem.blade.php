@@ -78,36 +78,6 @@
   </div>
 </div>
 
-<!-- Script Modal + Zoom -->
-<script>
-  let zoomLevel = 1;
-
-  function openImageModal(src) {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    modalImg.src = src;
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
-    zoomLevel = 1;
-    modalImg.style.transform = `scale(${zoomLevel})`;
-  }
-
-  function closeImageModal() {
-    const modal = document.getElementById('imageModal');
-    modal.classList.remove('flex');
-    modal.classList.add('hidden');
-  }
-
-  // Zoom in/out pakai scroll
-  document.getElementById('imageModal').addEventListener('wheel', function (e) {
-    e.preventDefault();
-    const modalImg = document.getElementById('modalImage');
-    zoomLevel += e.deltaY * -0.001;
-    zoomLevel = Math.min(Math.max(0.5, zoomLevel), 3);
-    modalImg.style.transform = `scale(${zoomLevel})`;
-  });
-</script>
-
 {{-- FOOTER --}}
 @include('layouts.footer')
 
