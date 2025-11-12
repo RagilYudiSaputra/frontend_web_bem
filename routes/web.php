@@ -21,7 +21,7 @@ Route::get('/', function () {
 // Dashboard (bisa diakses tanpa login)
 Route::get('/dashboard', function () {
     return view('admindasboard');
-})->name('dashboard');
+})->middleware('auth')->name('dashboard');
 
 // Route untuk halaman Event publik (tanpa login)
 Route::get('/event', function () {
