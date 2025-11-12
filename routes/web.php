@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 // Dashboard (bisa diakses tanpa login)
 Route::get('/dashboard', function () {
-    return view('admindasboard');
-})->middleware('auth')->name('dashboard');
+    return view('dashboard');
+})->name('dashboard');
 
 // Route untuk halaman Event publik (tanpa login)
 Route::get('/event', function () {
@@ -51,4 +51,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+require __DIR__.'/kontak.php';
 require __DIR__.'/serviceRoutes.php';
